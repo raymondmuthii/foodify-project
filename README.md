@@ -29,3 +29,5 @@ This JavaScript file handles the application logic:
 ### API Integration
 
 The application uses the Tasty API to fetch recipe data.
+
+By Raymond Ruibi
