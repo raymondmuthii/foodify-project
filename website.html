@@ -10,23 +10,78 @@
     <header>
         <button id="back-button">Back</button>
         <h1><b>FOODIFY</b></h1>
-        <input type="text" id="search-input" placeholder="Search for a meal">
-        <button id="search-btn">Search</button>
+        <div>
+            <input type="text" id="search-input" placeholder="Search for a meal">
+            <button id="search-btn">Search</button>
+        </div>
+        <button id="signup-btn">Sign Up</button>
+        <button id="login-btn">Login</button>
+        <button id="logout-btn" style="display:none;">Logout</button>
     </header>
 
     <div id="content">
+        <!-- Homepage that displays a welcome message -->
         <div id="homepage">
-            <p>Welcome to Foodify! Discover delicious recipes and culinary inspiration from around the world. Use the search bar above to find your next meal idea.</p>
+            <p>Welcome to <b>Foodify</b>! Discover delicious recipes from around the world. Use the search bar above to find your next meal idea. <br> 
+            You don't know what to cook? <b>Don't worry</b> we've got you, with a wide collection of mouth-watering recipes that are sure to excite<br>
+            your taste buds.
+            </p>
+        </div>
+
+        <!-- Page to display meal details -->
+        <div id="recipe-details">
+            <h2>Recipe Details</h2>
+            <div id="recipe-info">
+                <img id="recipe-image" src="" alt="Recipe Image">
+                <div id="recipe-description">
+                    <h3 id="recipe-title"></h3>
+                    <p id="recipe-ingredients"></p>
+                    <p id="recipe-instructions"></p>
+                    <p id="recipe-nutrition"></p>
+                </div>
+            </div>
+            <h3>Comments</h3>
+            <div id="comments-container"></div>
+            <input type="comment here">
+        </div>
+        
+        <!-- Login Form -->
+        <div id="login-form" style="display:none;">
+            <h2>Login</h2>
+            <form id="login">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" name="email" required><br><br>
+
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="password" required><br><br>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div id="signup-form" style="display:none;">
+            <h2>Sign Up</h2>
+            <form id="signup">
+                <label for="signup-email">Email:</label>
+                <input type="email" id="signup-email" name="email" required><br><br>
+
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" name="password" required><br><br>
+
+                <button type="submit">Sign Up</button>
+            </form>
         </div>
 
         <div id="meal-container">
-            <!-- Drinks and foods containers will be appended here -->
+            <!-- Recipes will appear here -->
         </div>
     </div>
 
+    <!-- Page footer -->
     <footer>
         <p>© 2024 Foodify. All rights reserved.</p>
-        <p>Contact us: info@foodify.com</p>
+        <p>Contact us: foodify@foodmail.com</p>
     </footer>
 
     <script src="script.js"></script>
