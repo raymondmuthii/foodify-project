@@ -28,4 +28,4 @@ This JavaScript file handles the application logic:
 
 ### API Integration
 
-The application uses the Tasty API to fetch recipe data. Make sure to replace the placeholder `apiKey` and `apiHost` values with your own credentials.
+The application uses the Tasty API to fetch recipe data.
