@@ -17,7 +17,7 @@ searchBtn.addEventListener('click', function() {
   const searchTerm = searchInput.value.trim();
   if (searchTerm) {
     homepage.style.display = 'none';
-    mealContainer.style.display = 'flex';
+    mealContainer.style.display = 'grid';
     fetch(`https://tasty.p.rapidapi.com/recipes/list?from=0&size=20&q=${searchTerm}`, {
       method: 'GET',
       headers: {

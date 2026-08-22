@@ -4,19 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foodify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <button id="back-button">Back</button>
-        <h1><b>FOODIFY</b></h1>
-        <div>
-            <input type="text" id="search-input" placeholder="Search for a meal">
-            <button id="search-btn">Search</button>
+        <div class="header-row">
+            <button id="back-button">&larr; Back</button>
+            <h1>Foodify</h1>
+            <div class="search-group">
+                <input type="text" id="search-input" placeholder="Search for a meal">
+                <button id="search-btn">Search</button>
+            </div>
+            <div class="auth-group">
+                <button id="signup-btn">Sign Up</button>
+                <button id="login-btn">Login</button>
+                <button id="logout-btn" style="display:none;">Logout</button>
+            </div>
         </div>
-        <button id="signup-btn">Sign Up</button>
-        <button id="login-btn">Login</button>
-        <button id="logout-btn" style="display:none;">Logout</button>
+        <div class="header-accent"></div>
     </header>
 
     <div id="content">
