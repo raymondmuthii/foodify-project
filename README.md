@@ -1,5 +1,5 @@
 # Foodify
-[Watch the project demo!](https://www.loom.com/share/602dcdf17a6e42ae9c8c208e99eae0f5)
+
 
 Foodify is a web application designed to help users discover and manage recipes. The application allows users to search for recipes, view detailed recipe information.
 
